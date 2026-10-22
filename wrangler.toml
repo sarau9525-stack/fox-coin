@@ -1,6 +1,16 @@
 name = "foxcoin"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare Worker entry point
+main = "src/worker.ts"
+
+# Cloudflare Static Assets configuration
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Cloudflare Pages build output directory
 pages_build_output_dir = "dist"
 
 [vars]

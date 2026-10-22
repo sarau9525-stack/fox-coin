@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "tsx server.ts",
+    "deploy": "vite build && npx wrangler deploy",
     "test": "tsx tests/gameEngine.test.ts",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"
