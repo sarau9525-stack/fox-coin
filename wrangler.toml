@@ -1,0 +1,27 @@
+name = "foxcoin"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+[vars]
+APP_URL = "https://foxcoin.pages.dev"
+TELEGRAM_BOT_USERNAME = "FOXCOINBot"
+TELEGRAM_BOT_NAME = "FOXCOIN"
+ADMIN_EMAIL = "k39127031@gmail.com"
+ADMIN_SECRET = "123456"
+
+# Cloudflare D1 Database Binding for Serverless SQLite
+[[d1_databases]]
+binding = "DB"
+database_name = "foxcoin-db"
+database_id = "foxcoin-db-d1-binding"
+
+# Optional Cloudflare KV Cache Binding
+[[kv_namespaces]]
+binding = "FOX_KV"
+id = "foxcoin-kv-binding"
+
+# Production secrets to configure in Cloudflare Dashboard or `npx wrangler secret put`:
+# TELEGRAM_BOT_TOKEN
+# TELEGRAM_WEBHOOK_SECRET
+# SESSION_SECRET
