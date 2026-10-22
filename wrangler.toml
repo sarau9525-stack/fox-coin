@@ -19,7 +19,7 @@ database_id = "foxcoin-db-d1-binding"
 # Optional Cloudflare KV Cache Binding
 [[kv_namespaces]]
 binding = "FOX_KV"
-id = "e0fb4634a400471e8a60f40f1ed24562"
+id = "foxcoin-kv-binding"
 
 # Production secrets to configure in Cloudflare Dashboard or `npx wrangler secret put`:
 # TELEGRAM_BOT_TOKEN
